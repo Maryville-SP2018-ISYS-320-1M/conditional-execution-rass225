@@ -17,34 +17,39 @@ x < y
 
 /* 1. 
 -- Your conditional expression
-
+y > 0
 
 -- Your test values for x, y, z and do you expect true or false?
+0, 5, 0 -> True
+0, -2, 0 -> False
 
 */
 
 /* 2. 
 -- Your conditional expression
-
+x != 0
 
 -- Your test values for x, y, z and do you expect true or false?
-
+1, 0, 0 -> true
+0, 1, 1 -> false
 */
 
 /* 3.  
 -- Your conditional expression
-
+(y * z) % 2 == 0
 
 -- Your test values for x, y, z and do you expect true or false?
-
+0, 5, 5 -> true
+0, 5, 4 -> false
 */
 
 /* 4.  
 -- Your conditional expression
 
-
+y >= x + z
 -- Your test values for x, y, z and do you expect true or false?
-
+2, 6, 4 -> true
+3, 5, 3 -> false
 */
 
 public class P1_YourOwnWords {
@@ -59,7 +64,7 @@ public class P1_YourOwnWords {
 		
 		// Replace the conditional test, x < y below with your conditional expression to verify it is correct
 		// using your test values
-		if( x < y ) {
+		if(y >= x + z) {
 			System.out.println("The test was TRUE");
 		} else {
 			System.out.println("The test was FALSE");
